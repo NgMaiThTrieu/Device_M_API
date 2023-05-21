@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class TypeOfDevice extends Model
+{
+    use HasFactory;
+    protected $table = 'type_of_devices';
+    protected $primaryKey = 'Type_Of_Device_ID';
+    public $timestamps = true;
+    protected $fillable = [
+        'Type_Of_Device_Name',
+    ];
+}
