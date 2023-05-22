@@ -10,7 +10,7 @@ class TypeOfDevice extends Model
     use HasFactory;
     protected $table = 'type_of_devices';
     protected $primaryKey = 'Type_Of_Device_ID';
-    public $timestamps = true;
+    public $timestamps = false;
     protected $fillable = [
         'Type_Of_Device_Name',
     ];

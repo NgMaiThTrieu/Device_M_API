@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('requires', function (Blueprint $table) {
-            $table->increments('Require_ID');
+            $table->id('Require_ID');
             $table->integer('Device_ID');
             $table->smallInteger('Require_Type');
             $table->text('Description');

@@ -15,6 +15,6 @@ class Brand extends Model
         'Status'
     ];
     protected $table = 'brand';
-    public $timestamps = true;
+    public $timestamps = false;
     protected $primaryKey = 'Brand_ID';
 }
