@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\SupplierController;
@@ -19,6 +20,7 @@ use App\Http\Controllers\DisposalController;
 use App\Http\Controllers\ReportEmailController;
 use App\Http\Controllers\RequireController;
 use App\Http\Controllers\TeacherInformationController;
+use App\Models\Brand;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,10 +78,10 @@ Route::apiResource('bod-details', BodDetailController::class);
 //phiếu mượn trả
 Route::apiResource('equipment-borrowing-forms', EquipmentBorrowingFormController::class);
 
-//Chi tiết phiếu mượn 
+//Chi tiết phiếu mượn
 Route::apiResource('borrowing-details', BorrowingDetailController::class);
 
-//Bảng cấu hình 
+//Bảng cấu hình
 Route::apiResource('configurations', ConfigurationController::class);
 
 //Bảng chi tiết cấu hình
@@ -91,7 +93,7 @@ Route::apiResource('configuration-specifications', ConfigurationSpecificationCon
 //Bảng thanh lý
 Route::apiResource('disposals', DisposalController::class);
 
-//Bảng hòm thư báo cáo 
+//Bảng hòm thư báo cáo
 Route::apiResource('report-mails', ReportEmailController::class);
 
 //Bảng thông tin giáo viên
@@ -102,3 +104,6 @@ Route::apiResource('requires', RequireController::class);
 
 //Bảng chi tiết thiết bị
 Route::apiResource('detail-cons', DetailConController::class);
+
+//Bảng thương hiệu
+Route::apiResource('brands', BrandController::class);

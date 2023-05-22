@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Faculty extends Model
 {
     protected $primaryKey = 'Faculty_ID';
-    protected $fillable = ['Faculty_Name', 'image'];
+    protected $fillable = [
+     'Faculty_Name',
+     'Image',
+     'Status'
+    ];
     protected $table = 'faculties';
     public $timestamps = true;
     use HasFactory;

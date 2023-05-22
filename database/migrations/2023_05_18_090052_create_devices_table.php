@@ -18,9 +18,9 @@ return new class extends Migration
             $table->integer('Batch_Of_Goods_ID');
             $table->integer('Room_ID');
             $table->integer('Faculty_ID');
+            $table->integer('Brand_ID');
             $table->string('Device_Name', 20);
             $table->string('QRCode', 20);
-            $table->string('Brand', 10);
             $table->decimal('Price', 19, 4);
             $table->dateTime('Warranty_Period');
             $table->smallInteger('Status');
