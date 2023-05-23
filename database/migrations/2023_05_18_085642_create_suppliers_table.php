@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('Supplier_Name', 30);
             $table->string('Address', 70);
             $table->integer('Phone_Number');
-            $table->timestamps();
         });
     }
 

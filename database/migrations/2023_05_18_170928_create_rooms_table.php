@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('Room_Name', 20);
             $table->text('Note')->nullable();
             $table->smallInteger('Status');
-            $table->timestamps();
         });
     }
 

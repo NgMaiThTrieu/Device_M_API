@@ -11,7 +11,7 @@ class BatchOfGood extends Model
     protected $fillable = [
         'Date_Of_Import'
     ];
-    public $timestamps = true;
+    public $timestamps = false;
     protected $table = 'batch_of_goods';
     protected $primaryKey = 'Batch_Of_Goods_ID';
 }

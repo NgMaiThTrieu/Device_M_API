@@ -14,6 +14,6 @@ class Room extends Model
     ];
     protected $table = 'rooms';
     protected $primaryKey = 'Room_ID';
-    public $timestamps = true;
+    public $timestamps = false;
     use HasFactory;
 }
