@@ -15,10 +15,12 @@ class TypeOfDeviceSeeder extends Seeder
     public function run(): void
     {
         TypeOfDevice::create([
-            'Type_Of_Device_Name'=>'Máy tính'
+            'Type_Of_Device_Name'=>'Máy tính',
+            'Image'=>'maytinh.png'
         ]);
         TypeOfDevice::create([
-            'Type_Of_Device_Name'=>'Laptop'
+            'Type_Of_Device_Name'=>'Laptop',
+            'Image'=>'laptop.jpg'
         ]);
         //
     }
