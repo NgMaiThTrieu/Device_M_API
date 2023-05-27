@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('Faculty_ID');
             $table->integer('Brand_ID');
             $table->string('Device_Name', 50);
+            $table->string('Image',255);
             $table->string('QRCode', 20);
             $table->decimal('Price', 19, 4);
             $table->dateTime('Warranty_Period');

@@ -22,6 +22,7 @@ class DeviceSeeder extends Seeder
             'Faculty_ID'=> 1,
             'Brand_ID'=> 2,
             'Device_Name'=> 'PC HP Slim Desktop Bundle',
+            'Image'=>'https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/821/10052816-pc-hp-slim-desktop-bundle-s01-i5-12400-pf2033d-6l604pa-1.jpg',
             'QRCode'=>'re23',
             'Price'=> 10890000,
             'Warranty_Period'=>'2024-5-20',

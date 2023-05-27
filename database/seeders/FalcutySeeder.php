@@ -17,12 +17,12 @@ class FalcutySeeder extends Seeder
         //
         Faculty::create(
             ['Faculty_Name'=>'Công nghệ thông tin',
-            'Image'=>'Logo_Khoa_CNTT.jpg',
+            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Logo_Khoa/Logo_Khoa_CNTT.jpg',
             'Status'=>1
         ]);
         Faculty::create(
             ['Faculty_Name'=>'Bộ môn kinh tế',
-            'Image'=>'Logo_Bo_Mon_Kinh_Te.png',
+            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Logo_Khoa/Logo_Bo_Mon_Kinh_Te.png',
             'Status'=>1
         ]);
 

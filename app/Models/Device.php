@@ -17,6 +17,7 @@ class Device extends Model
         'Faculty_ID',
         'Brand_ID',
         'Device_Name',
+        'Image',
         'QRCode',
         'Price',
         'Warranty_Period',
