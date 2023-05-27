@@ -11,6 +11,7 @@ use App\Models\BatchOfGood;
 use App\Models\Room;
 use App\Models\Device;
 use App\Models\Supplier;
+use App\Models\TeacherInformation;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -25,5 +26,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RoomSeeder::class);
         $this->call(SupplierSeed::class);
         $this->call(DeviceSeeder::class);
+        $this->call(TeacherInformationSeeder::class);
+
     }
 }

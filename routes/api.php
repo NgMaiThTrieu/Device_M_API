@@ -63,6 +63,7 @@ Route::delete('suppliers/{id}', [SupplierController::class, 'destroy']);
 Route::get('type-of-devices', [TypeOfDeviceController::class, 'index']);
 Route::post('type-of-devices', [TypeOfDeviceController::class, 'store']);
 Route::get('type-of-devices/{id}', [TypeOfDeviceController::class, 'show']);
+Route::get('type-of-devices/{Type_Of_Device_Name}', [TypeOfDeviceController::class, 'show']);
 Route::put('type-of-devices/{id}', [TypeOfDeviceController::class, 'update']);
 Route::delete('type-of-devices/{id}', [TypeOfDeviceController::class, 'destroy']);
 
@@ -97,7 +98,7 @@ Route::apiResource('disposals', DisposalController::class);
 Route::apiResource('report-mails', ReportEmailController::class);
 
 //Bảng thông tin giáo viên
-Route::apiResource('teacher-infomation', TeacherInformationController::class);
+Route::apiResource('teacher-informations', TeacherInformationController::class);
 
 //bảng yêu cầu
 Route::apiResource('requires', RequireController::class);

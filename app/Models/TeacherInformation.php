@@ -9,14 +9,14 @@ class TeacherInformation extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'Department_ID',
+        'Faculty_ID',
         'Username',
         'Password',
         'Teacher_Name',
         'Phone_Number',
         'Address'
     ];
-    protected $table = 'teacher_infomation';
-    public $timestamps = true;
+    protected $table = 'teacher_information';
+    public $timestamps = false;
     protected $primaryKey = 'ID_Teacher';
 }

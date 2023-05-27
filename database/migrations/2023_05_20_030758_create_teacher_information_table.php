@@ -13,13 +13,12 @@ return new class extends Migration
     {
         Schema::create('teacher_information', function (Blueprint $table) {
             $table->id('ID_Teacher');
-            $table->integer('Department_ID');
+            $table->integer('Faculty_ID');
             $table->string('Username', 20);
             $table->string('Password', 12);
             $table->string('Teacher_Name', 20);
             $table->integer('Phone_Number');
             $table->string('Address', 70);
-            $table->timestamps();
         });
     }
 
