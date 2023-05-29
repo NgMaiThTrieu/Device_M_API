@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('configuration_details', function (Blueprint $table) {
             $table->id('Configuration_Detail_ID');
-            $table->string('Configuration_Name', 20);
-            $table->timestamps();
+            $table->string('Configuration_Name', 30);
         });
     }
 

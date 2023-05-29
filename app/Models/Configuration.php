@@ -13,6 +13,6 @@ class Configuration extends Model
         'Configuration_Detail_ID'
     ];
     protected $table = 'configurations';
-    public $timestamps = true;
+    public $timestamps = false;
     protected $primaryKey = 'ID_Configuration';
 }

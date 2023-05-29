@@ -12,6 +12,9 @@ use App\Models\Room;
 use App\Models\Device;
 use App\Models\Supplier;
 use App\Models\TeacherInformation;
+use App\Models\Configuration;
+use App\Models\ConfigurationDetail;
+use App\Models\ConfigurationSpecification;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -27,6 +30,9 @@ class DatabaseSeeder extends Seeder
         $this->call(SupplierSeed::class);
         $this->call(DeviceSeeder::class);
         $this->call(TeacherInformationSeeder::class);
+        $this->call(ConfigurationDetailSeeder::class);
+        $this->call(ConfigurationSeeder::class);
+        $this->call(ConfigurationSpecificationSeeder::class);
 
     }
 }

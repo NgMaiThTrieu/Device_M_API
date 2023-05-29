@@ -14,5 +14,5 @@ class ConfigurationDetail extends Model
 
     protected $primaryKey = 'Configuration_Detail_ID';
     protected $table = 'configuration_details';
-    public $timestamps = true;
+    public $timestamps = false;
 }

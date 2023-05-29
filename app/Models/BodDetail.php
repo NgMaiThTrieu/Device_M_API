@@ -15,7 +15,7 @@ class BodDetail extends Model
         'Unit_Price'
     ];
     protected $table = 'departments';
-    protected $primaryKey = ['Batch_Of_Goods_ID', 'Device_ID'];
+    protected $primaryKey = ['Batch_Of_Goods_ID','Device_ID'];
 
         public $timestamps = true;
 }

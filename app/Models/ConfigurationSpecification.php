@@ -9,16 +9,17 @@ class ConfigurationSpecification extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'ID_Device',
-        'ID_Configuration_Detail',
-        'Specifications',
-        'Brand',
+        'Device_ID',
+        'Configuration_Detail_ID',
+        'Specification',
+        'Brand_ID',
         'Status',
         'Note'
     ];
 
-    protected $primaryKey = ['ID_Device', 'ID_Configuration_Detail'];
+    protected $primaryKey = ['Device_ID','Configuration_Detail_ID'];
     protected $table = 'configuration_specifications';
-    public $timestamps = true;
-    // protected $keyType = 'array';
+    public $timestamps = false;
+    public $incrementing = false;
+
 }

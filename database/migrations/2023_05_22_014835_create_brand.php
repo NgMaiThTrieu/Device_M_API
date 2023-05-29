@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('brand', function (Blueprint $table) {
             $table->id('Brand_ID');
             $table->string('Brand_Name');
-            $table->integer('Quantity');
             $table->smallInteger('Status');
         });
     }

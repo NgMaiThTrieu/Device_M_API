@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id('ID_Configuration');
             $table->integer('Device_Type_ID');
             $table->integer('Configuration_Detail_ID');
-            $table->timestamps();
         });
     }
 
