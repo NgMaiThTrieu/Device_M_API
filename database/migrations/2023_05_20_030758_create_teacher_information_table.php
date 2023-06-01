@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('Username', 20);
             $table->string('Password', 12);
             $table->string('Teacher_Name', 20);
-            $table->integer('Phone_Number');
+            $table->string('Phone_Number',20);
             $table->string('Address', 70);
         });
     }

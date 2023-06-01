@@ -15,7 +15,7 @@ class TeacherInformationSeeder extends Seeder
     {
         TeacherInformation::create([
             'Faculty_ID'=>1,
-            'Username'=>'dnhhnam',
+            'Username'=>'dnhhnam@gmail.com',
             'Password'=>'123123',
             'Teacher_Name'=>'Đinh Hoàng Nam',
             'Phone_Number'=>'0933725743',
@@ -23,7 +23,7 @@ class TeacherInformationSeeder extends Seeder
         ]);
         TeacherInformation::create([
             'Faculty_ID'=>1,
-            'Username'=>'vthdat',
+            'Username'=>'vthdat@gmail.com',
             'Password'=>'123123',
             'Teacher_Name'=>'Võ Thành Đạt',
             'Phone_Number'=>'0933725746',
