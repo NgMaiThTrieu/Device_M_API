@@ -13,6 +13,7 @@ class TypeOfDevice extends Model
     public $timestamps = false;
     protected $fillable = [
         'Type_Of_Device_Name',
-        'Image'
+        'Image',
+        'Icon'
     ];
 }

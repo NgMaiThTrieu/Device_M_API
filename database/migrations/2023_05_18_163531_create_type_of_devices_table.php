@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('Type_Of_Device_ID');
             $table->string('Type_Of_Device_Name', 20);
             $table->string('Image', 255);
+            $table->string('Icon',255);
         });
     }
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('Teacher_Name', 20);
             $table->string('Phone_Number',20);
             $table->string('Address', 70);
+            $table->smallInteger('Status');
         });
     }
 

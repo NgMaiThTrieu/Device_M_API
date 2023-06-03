@@ -14,75 +14,93 @@ class ConfigurationSeeder extends Seeder
     {
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>1
+            'Configuration_Detail_ID'=>1,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>2
+            'Configuration_Detail_ID'=>2,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>3
+            'Configuration_Detail_ID'=>3,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>4
+            'Configuration_Detail_ID'=>4,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>5
+            'Configuration_Detail_ID'=>5,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>6
+            'Configuration_Detail_ID'=>6,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>7
+            'Configuration_Detail_ID'=>7,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>8
+            'Configuration_Detail_ID'=>8,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>9
+            'Configuration_Detail_ID'=>9,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>10
+            'Configuration_Detail_ID'=>10,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>11
+            'Configuration_Detail_ID'=>11,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>12
+            'Configuration_Detail_ID'=>12,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>13
+            'Configuration_Detail_ID'=>13,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>14
+            'Configuration_Detail_ID'=>14,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>15
+            'Configuration_Detail_ID'=>15,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>16
+            'Configuration_Detail_ID'=>16,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>17
+            'Configuration_Detail_ID'=>17,
+            'Status'=>1
         ]);
         Configuration::create([
             'Device_Type_ID'=>1,
-            'Configuration_Detail_ID'=>18
+            'Configuration_Detail_ID'=>18,
+            'Status'=>1
         ]);
 
     }

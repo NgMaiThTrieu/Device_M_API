@@ -10,7 +10,8 @@ class Configuration extends Model
     use HasFactory;
     protected $fillable = [
         'Device_Type_ID',
-        'Configuration_Detail_ID'
+        'Configuration_Detail_ID',
+        'Status'
     ];
     protected $table = 'configurations';
     public $timestamps = false;

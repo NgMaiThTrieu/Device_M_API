@@ -16,11 +16,13 @@ class TypeOfDeviceSeeder extends Seeder
     {
         TypeOfDevice::create([
             'Type_Of_Device_Name'=>'Máy tính',
-            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Images_TOD/maytinh.png'
+            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Images_TOD/maytinh.png',
+            'Icon'=>'https://img.icons8.com/?size=512&id=PuYQDk2qb8JB&format=png'
         ]);
         TypeOfDevice::create([
             'Type_Of_Device_Name'=>'Laptop',
-            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Images_TOD/laptop.jpg'
+            'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Images_TOD/laptop.jpg',
+            'Icon'=>'https://img.icons8.com/?size=1x&id=55150&format=png'
         ]);
         //
     }

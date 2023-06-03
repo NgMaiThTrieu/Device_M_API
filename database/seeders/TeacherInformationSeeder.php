@@ -19,7 +19,8 @@ class TeacherInformationSeeder extends Seeder
             'Password'=>'123123',
             'Teacher_Name'=>'Đinh Hoàng Nam',
             'Phone_Number'=>'0933725743',
-            'Address'=>'377 Lê Văn Lương, Phường Tân Hưng, Quận 7, Tp.HCM'
+            'Address'=>'377 Lê Văn Lương, Phường Tân Hưng, Quận 7, Tp.HCM',
+            'Status'=>1
         ]);
         TeacherInformation::create([
             'Faculty_ID'=>1,
@@ -27,7 +28,8 @@ class TeacherInformationSeeder extends Seeder
             'Password'=>'123123',
             'Teacher_Name'=>'Võ Thành Đạt',
             'Phone_Number'=>'0933725746',
-            'Address'=>'402 Nguyễn Thị Thập, Phường Tân Hưng, Quận 7, Tp.HCM'
+            'Address'=>'402 Nguyễn Thị Thập, Phường Tân Hưng, Quận 7, Tp.HCM',
+            'Status'=>1
         ]);
     }
 }

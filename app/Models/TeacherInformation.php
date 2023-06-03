@@ -14,7 +14,8 @@ class TeacherInformation extends Model
         'Password',
         'Teacher_Name',
         'Phone_Number',
-        'Address'
+        'Address',
+        'Status'
     ];
     protected $table = 'teacher_information';
     public $timestamps = false;

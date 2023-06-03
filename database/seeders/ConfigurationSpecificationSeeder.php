@@ -87,7 +87,7 @@ class ConfigurationSpecificationSeeder extends Seeder
         ConfigurationSpecification::create([
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>10,
-            'Specification'=>'	Intel® ADL H670',
+            'Specification'=>'Intel® ADL H670',
             'Brand_ID'=>3,
             'Status'=>1,
             'Note'=>''
@@ -95,7 +95,7 @@ class ConfigurationSpecificationSeeder extends Seeder
         ConfigurationSpecification::create([
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>11,
-            'Specification'=>'	1 VGA; 1 HDMI-out 1.4b',
+            'Specification'=>'1 VGA; 1 HDMI-out 1.4b',
             'Brand_ID'=>null,
             'Status'=>1,
             'Note'=>''
