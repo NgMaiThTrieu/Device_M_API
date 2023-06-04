@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Faculty extends Model
 {
+    use HasFactory;
     protected $primaryKey = 'Faculty_ID';
     protected $fillable = [
      'Faculty_Name',
@@ -14,6 +15,5 @@ class Faculty extends Model
      'Status'
     ];
     protected $table = 'faculties';
-    public $timestamps = true;
-    use HasFactory;
+    public $timestamps = false;
 }

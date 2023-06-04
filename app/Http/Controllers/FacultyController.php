@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Department;
 use App\Models\Faculty;
 
 class FacultyController extends Controller
@@ -13,8 +12,8 @@ class FacultyController extends Controller
      */
     public function index()
     {
-        $depart = Faculty::all();
-        return response()->json($depart);
+        $faculties = Faculty::all();
+        return response()->json($faculties);
     }
 
     /**
@@ -22,10 +21,8 @@ class FacultyController extends Controller
      */
     public function store(Request $request)
     {
-        $khoa = Faculty::create([
-            'Department_Name' => $request->input('Department_Name')
-        ]);
-        return response()->json($khoa);
+        $faculties = Faculty::create($request->all());
+        return response()->json($faculties, 201);
     }
 
     /**
@@ -33,11 +30,11 @@ class FacultyController extends Controller
      */
     public function show($id)
     {
-        $depart = Faculty::find($id);
-        if(!$depart){
-            return response()->json(['message'=>'Department not found',404]);
+        $faculties = Faculty::find($id);
+        if(!$faculties){
+            return response()->json(['message'=>'Faculty not found',404]);
         }
-        return response()->json($depart);
+        return response()->json($faculties);
     }
 
     /**
@@ -45,13 +42,13 @@ class FacultyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $depart = Faculty::find($id);
-        if (!$depart) {
-            return response()->json(['message' => 'Department not found'], 404);
+        $faculties = Faculty::find($id);
+        if (!$faculties) {
+            return response()->json(['message' => 'Faculty not found'], 404);
         }
-        $depart->Department_Name = $request->input('Department_Name');
-        $depart->save();
-        return response()->json($depart);
+        $faculties->Faculty_Name = $request->input('Faculty_Name');
+        $faculties->save();
+        return response()->json($faculties);
     }
 
     /**
@@ -59,11 +56,11 @@ class FacultyController extends Controller
      */
     public function destroy(string $id)
     {
-        $depart = Faculty::find($id);
-        if (!$depart) {
-            return response()->json(['message' => 'Department not found'], 404);
+        $faculties = Faculty::find($id);
+        if (!$faculties) {
+            return response()->json(['message' => 'Faculty not found'], 404);
         }
-        $depart->delete();
-        return response()->json(['message' => 'Department deleted']);
+        $faculties->delete();
+        return response()->json(['message' => 'Faculty deleted']);
     }
 }
