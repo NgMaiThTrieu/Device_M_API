@@ -10,6 +10,7 @@ class TeacherInformation extends Model
     use HasFactory;
     protected $fillable = [
         'Faculty_ID',
+        'Image',
         'Username',
         'Password',
         'Teacher_Name',
