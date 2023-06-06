@@ -44,6 +44,7 @@ Route::post('faculties', [FacultyController::class, 'store']);
 Route::get('faculties/{id}', [FacultyController::class, 'show']);
 Route::put('faculties/{id}', [FacultyController::class, 'update']);
 Route::delete('faculties/{id}', [FacultyController::class, 'destroy']);
+Route::patch('faculties/{id}', [FacultyController::class, 'destroy']);
 
 //Thiết bị
 Route::get('devices', [DeviceController::class, 'index']);
