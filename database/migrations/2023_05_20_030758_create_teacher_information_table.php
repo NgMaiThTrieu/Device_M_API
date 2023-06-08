@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('Teacher_Name', 20);
             $table->string('Phone_Number',20);
             $table->string('Address', 70);
+            $table->string('Gender',4);
+            $table->date('Date_Of_Birth');
             $table->smallInteger('Status');
         });
     }
