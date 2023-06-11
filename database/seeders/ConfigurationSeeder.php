@@ -103,22 +103,22 @@ class ConfigurationSeeder extends Seeder
             'Status'=>1
         ]);
         Configuration::create([
-            'Device_Type_ID'=>1,
+            'Device_Type_ID'=>3,
             'Configuration_Detail_ID'=>19,
             'Status'=>1
         ]);
         Configuration::create([
-            'Device_Type_ID'=>1,
+            'Device_Type_ID'=>3,
             'Configuration_Detail_ID'=>20,
             'Status'=>1
         ]);
         Configuration::create([
-            'Device_Type_ID'=>1,
+            'Device_Type_ID'=>3,
             'Configuration_Detail_ID'=>21,
             'Status'=>1
         ]);
         Configuration::create([
-            'Device_Type_ID'=>1,
+            'Device_Type_ID'=>3,
             'Configuration_Detail_ID'=>22,
             'Status'=>1
         ]);
