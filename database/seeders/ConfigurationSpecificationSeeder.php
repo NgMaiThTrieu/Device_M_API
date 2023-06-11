@@ -156,6 +156,36 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Status'=>1,
             'Note'=>''
         ]);
-
+        ConfigurationSpecification::create([
+            'Device_ID'=>4,
+            'Configuration_Detail_ID'=>19,
+            'Specification'=>'220V~/50Hz',
+            'Brand_ID'=>null,
+            'Status'=>1,
+            'Note'=>''
+        ]);
+        ConfigurationSpecification::create([
+            'Device_ID'=>4,
+            'Configuration_Detail_ID'=>20,
+            'Specification'=>'24 W',
+            'Brand_ID'=>null,
+            'Status'=>1,
+            'Note'=>''
+        ]);
+        ConfigurationSpecification::create([
+            'Device_ID'=>4,
+            'Configuration_Detail_ID'=>21,
+            'Specification'=>'5 cánh',
+            'Brand_ID'=>null,
+            'Status'=>1,
+            'Note'=>''
+        ]); ConfigurationSpecification::create([
+            'Device_ID'=>4,
+            'Configuration_Detail_ID'=>18,
+            'Specification'=>'Có',
+            'Brand_ID'=>null,
+            'Status'=>1,
+            'Note'=>''
+        ]);
     }
 }

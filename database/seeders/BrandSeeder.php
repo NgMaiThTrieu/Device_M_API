@@ -91,6 +91,10 @@ class BrandSeeder extends Seeder
             'Brand_Name'=>'MSI',
             'Status'=>1
         ]);
+        Brand::create([
+            'Brand_Name'=>'Sunhouse',
+            'Status'=>1
+        ]);
 
         //
     }

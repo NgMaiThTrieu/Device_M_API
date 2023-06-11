@@ -24,6 +24,11 @@ class TypeOfDeviceSeeder extends Seeder
             'Image'=>'https://raw.githubusercontent.com/nhonguyen19/D_Management/master/assets/Images_TOD/laptop.jpg',
             'Icon'=>'https://img.icons8.com/?size=1x&id=55150&format=png'
         ]);
+        TypeOfDevice::create([
+            'Type_Of_Device_Name'=>'Quạt',
+            'Image'=>'https://tse1.mm.bing.net/th?id=OIP.IFoBosxBLVERJRoNxkiJsQHaHa&pid=Api&P=0&h=180',
+            'Icon'=>'https://img.icons8.com/?size=512&id=4rOBIFkGqKzD&format=png'
+        ]);
         //
     }
 }

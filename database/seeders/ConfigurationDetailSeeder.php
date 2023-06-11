@@ -66,6 +66,19 @@ class ConfigurationDetailSeeder extends Seeder
         ConfigurationDetail::create([
             'Configuration_Name'=>'Kích thước sản phẩm'
         ]);
+        ConfigurationDetail::create([
+            'Configuration_Name'=>'Điện áp'
+        ]);
+        ConfigurationDetail::create([
+            'Configuration_Name'=>'Công suất'
+        ]);
+        ConfigurationDetail::create([
+            'Configuration_Name'=>'Cánh quạt'
+        ]);
+        ConfigurationDetail::create([
+            'Configuration_Name'=>'Khả năng quay đảo chiều'
+        ]);
+
 
 
         //
