@@ -69,6 +69,8 @@ class FacultyController extends Controller
     public function destroy(string $id)
     {
         $faculty = Faculty::find($id);
+        // $faculty->delete();
+        // return response()->json(null, 204);
 
         if (!$faculty) {
             return response()->json(['message' => 'Faculty not found'], 404);
