@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TeacherInformation;
+
 class TeacherInformationController extends Controller
 {
     public function index()
@@ -20,7 +21,17 @@ class TeacherInformationController extends Controller
 
     public function store(Request $request)
     {
+        $username = $request->input('Username');
+
+        // Kiểm tra xem username đã tồn tại hay chưa
+        $existingTeacher = TeacherInformation::where('Username', $username)->first();
+        if ($existingTeacher) {
+            return response()->json(['error' => 'Username đã tồn tại'], 400);
+        }
+
+        // Tạo một TeacherInformation mới
         $teacherInformation = TeacherInformation::create($request->all());
+
         return response()->json($teacherInformation, 201);
     }
 
