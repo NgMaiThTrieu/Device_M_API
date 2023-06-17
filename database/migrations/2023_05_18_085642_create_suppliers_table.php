@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id('Supplier_ID');
             $table->string('Supplier_Name', 30);
             $table->string('Address', 70);
-            $table->integer('Phone_Number');
+            $table->string('Phone_Number');
+            $table->smallInteger('Status');
         });
     }
 

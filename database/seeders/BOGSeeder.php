@@ -15,10 +15,12 @@ class BOGSeeder extends Seeder
     {
         //
         BatchOfGood::create([
-            'Date_Of_Import'=>'2023-05-23'
+            'Date_Of_Import'=>'2023-05-23',
+            'Status'=>1
         ]);
         BatchOfGood::create([
-            'Date_Of_Import'=>'2023-04-13'
+            'Date_Of_Import'=>'2023-04-13',
+            'Status'=>1
         ]);
 
     }

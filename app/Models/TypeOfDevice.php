@@ -14,6 +14,7 @@ class TypeOfDevice extends Model
     protected $fillable = [
         'Type_Of_Device_Name',
         'Image',
-        'Icon'
+        'Icon',
+        'Status'
     ];
 }

@@ -9,7 +9,8 @@ class BatchOfGood extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'Date_Of_Import'
+        'Date_Of_Import',
+        'Status'
     ];
     public $timestamps = false;
     protected $table = 'batch_of_goods';

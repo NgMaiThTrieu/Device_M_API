@@ -18,7 +18,14 @@ class SupplierSeed extends Seeder
         Supplier::create([
             'Supplier_Name'=>'Phong Vũ',
             'Address'=>'264A – 264B – 264C Nguyễn Thị Minh Khai, Phường 6, Quận 3, TP.HCM',
-            'Phone_Number'=>'18006865',
+            'Phone_Number'=>'1800 6865',
+            'Status'=>1
+        ]);
+        Supplier::create([
+            'Supplier_Name'=>'An Phát ',
+            'Address'=>'330-332 Võ Văn Tần, Phường 5, Quận 3, TP.HCM',
+            'Phone_Number'=>'0931.105.498',
+            'Status'=>1
         ]);
     }
 }
