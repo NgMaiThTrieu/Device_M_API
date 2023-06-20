@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('configuration_specifications', function (Blueprint $table) {
             $table->integer('Device_ID');
             $table->integer('Configuration_Detail_ID');
-            $table->string('Specification', 30);
+            $table->string('Specification', 30)->nullable();
             $table->integer('Brand_ID')->nullable();
             $table->smallInteger('Status');
             $table->string('Note')->nullable();
