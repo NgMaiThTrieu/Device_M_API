@@ -42,25 +42,28 @@ class FacultyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $faculty = Faculty::find($id);
+        // $faculty = Faculty::find($id);
 
-        if (!$faculty) {
-            return response()->json(['message' => 'Khoa không tồn tại'], 404);
-        }
+        // if (!$faculty) {
+        //     return response()->json(['message' => 'Khoa không tồn tại'], 404);
+        // }
     
-        // Kiểm tra giá trị 'Faculty_Name' trước khi cập nhật
-        $facultyName = $request->input('Faculty_Name');
-        if (!is_null($facultyName)) {
-            $faculty->Faculty_Name = $facultyName;
-        }
+        // // Kiểm tra giá trị 'Faculty_Name' trước khi cập nhật
+        // $facultyName = $request->input('Faculty_Name');
+        // if (!is_null($facultyName)) {
+        //     $faculty->Faculty_Name = $facultyName;
+        // }
     
-        // Cập nhật các trường khác
-        $faculty->Image = $request->input('Image');
-        $faculty->Status = $request->input('Status');
+        // // Cập nhật các trường khác
+        // $faculty->Image = $request->input('Image');
+        // $faculty->Status = $request->input('Status');
     
-        $faculty->save();
+        // $faculty->save();
     
-        return response()->json(['message' => 'Chỉnh sửa khoa thành công'], 200);
+        // return response()->json(['message' => 'Chỉnh sửa khoa thành công'], 200);
+        $faculty = Faculty::find($id);
+        $faculty->update($request->all());
+        return response()->json($faculty);
     }
 
     /**
@@ -69,16 +72,16 @@ class FacultyController extends Controller
     public function destroy(string $id)
     {
         $faculty = Faculty::find($id);
-        // $faculty->delete();
-        // return response()->json(null, 204);
+        $faculty->delete();
+        return response()->json(null, 204);
 
-        if (!$faculty) {
-            return response()->json(['message' => 'Faculty not found'], 404);
-        }
+        // if (!$faculty) {
+        //     return response()->json(['message' => 'Faculty not found'], 404);
+        // }
     
-        $faculty->status = 0;
-        $faculty->save();
+        // $faculty->status = 0;
+        // $faculty->save();
     
-        return response()->json(['message' => 'Faculty deleted']);
+        //return response()->json(['message' => 'Faculty deleted']);
     }
 }

@@ -39,12 +39,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 //Khoa
-Route::get('faculties', [FacultyController::class, 'index']);
-Route::post('faculties', [FacultyController::class, 'store']);
-Route::get('faculties/{id}', [FacultyController::class, 'show']);
-Route::put('faculties/{id}', [FacultyController::class, 'update']);
-Route::delete('faculties/{id}', [FacultyController::class, 'destroy']);
-Route::patch('faculties/{id}', [FacultyController::class, 'destroy']);
+// Route::get('faculties', [FacultyController::class, 'index']);
+// Route::post('faculties', [FacultyController::class, 'store']);
+// Route::get('faculties/{id}', [FacultyController::class, 'show']);
+// Route::put('faculties/{id}', [FacultyController::class, 'update']);
+// Route::delete('faculties/{id}', [FacultyController::class, 'destroy']);
+// Route::patch('faculties/{id}', [FacultyController::class, 'destroy']);
+Route::apiResource('faculties', FacultyController::class);
 
 //Thiết bị
 Route::get('devices', [DeviceController::class, 'index']);
@@ -67,6 +68,7 @@ Route::get('type-of-devices/{id}', [TypeOfDeviceController::class, 'show']);
 Route::get('type-of-devices/{Type_Of_Device_Name}', [TypeOfDeviceController::class, 'show']);
 Route::put('type-of-devices/{id}', [TypeOfDeviceController::class, 'update']);
 Route::delete('type-of-devices/{id}', [TypeOfDeviceController::class, 'destroy']);
+
 
 //Phòng
 Route::apiResource('rooms', RoomController::class);
