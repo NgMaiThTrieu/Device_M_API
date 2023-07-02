@@ -12,6 +12,7 @@ class ReportEmail extends Model
         'Student_Code',
         'Device_Image',
         'QR_Code',
+        'Description',
         'Status'
     ];
     protected $table = 'report_emails';

@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('configuration_specifications', function (Blueprint $table) {
+            $table->id('id');
             $table->integer('Device_ID');
             $table->integer('Configuration_Detail_ID');
             $table->string('Specification', 30)->nullable();
             $table->integer('Brand_ID')->nullable();
             $table->smallInteger('Status');
             $table->string('Note')->nullable();
-            $table->primary(['Device_ID','Configuration_Detail_ID']);
         });
     }
 

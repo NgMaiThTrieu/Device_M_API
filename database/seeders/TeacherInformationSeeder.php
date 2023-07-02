@@ -24,6 +24,7 @@ class TeacherInformationSeeder extends Seeder
             'Address'=>'377 Lê Văn Lương, Phường Tân Hưng, Quận 7, Tp.HCM',
             'Gender'=>'Nam',
             'Date_Of_Birth'=>'1987-5-20',
+            'IsDeleted'=>1,
             'Status'=>1
         ]);
         TeacherInformation::create([
@@ -36,6 +37,7 @@ class TeacherInformationSeeder extends Seeder
             'Address'=>'60 Huỳnh Thúc Kháng, Phường Bến Nghé, Quận 1, Tp.HCM',
             'Gender'=>'Nữ',
             'Date_Of_Birth'=>'1990-5-15',
+            'IsDeleted'=>1,
             'Status'=>2
         ]);
     }

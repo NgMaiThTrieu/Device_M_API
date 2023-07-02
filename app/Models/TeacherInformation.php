@@ -18,6 +18,7 @@ class TeacherInformation extends Model
         'Address',
         'Gender',
         'Date_Of_Birth',
+        'IsDeleted',
         'Status',
 
     ];

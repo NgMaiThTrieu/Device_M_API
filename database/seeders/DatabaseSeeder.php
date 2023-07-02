@@ -33,6 +33,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ConfigurationDetailSeeder::class);
         $this->call(ConfigurationSeeder::class);
         $this->call(ConfigurationSpecificationSeeder::class);
-
+        $this->call(ReportMail::class);
     }
 }

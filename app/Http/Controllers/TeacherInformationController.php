@@ -47,5 +47,14 @@ class TeacherInformationController extends Controller
         $teacherInformation = TeacherInformation::find($id_teacher);
         $teacherInformation->delete();
         return response()->json(null, 204);
+
+        // if (!$teacherInformation) {
+        //     return response()->json(['message' => 'Teacher not found'], 404);
+        // }
+    
+        // $teacherInformation->IsDeleted = 0;
+        // $teacherInformation->save();
+    
+        // return response()->json(['message' => 'Teacher deleted']);
     }
 }

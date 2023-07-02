@@ -32,7 +32,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>3,
             'Specification'=>'Lên đến 4.3 GHz',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -56,7 +56,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>6,
             'Specification'=>'2933 MHz',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -72,7 +72,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>8,
             'Specification'=>'256 GB',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -96,7 +96,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>11,
             'Specification'=>'1 VGA; 1 HDMI-out 1.4b',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -104,7 +104,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>12,
             'Specification'=>'802.11a/b/g/n/ac (2x2)',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -112,7 +112,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>13,
             'Specification'=>'1 RJ-45',
-            'Brand_ID'=>null,
+            'Brand_ID'=>2,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -144,7 +144,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>17,
             'Specification'=>'3.02 kg',
-            'Brand_ID'=>null,
+            'Brand_ID'=>3,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -152,7 +152,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>1,
             'Configuration_Detail_ID'=>18,
             'Specification'=>'95 x 303 x 270 mm',
-            'Brand_ID'=>null,
+            'Brand_ID'=>5,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -160,7 +160,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>4,
             'Configuration_Detail_ID'=>19,
             'Specification'=>'220V~/50Hz',
-            'Brand_ID'=>null,
+            'Brand_ID'=>3,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -168,7 +168,7 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>4,
             'Configuration_Detail_ID'=>20,
             'Specification'=>'24 W',
-            'Brand_ID'=>null,
+            'Brand_ID'=>4,
             'Status'=>1,
             'Note'=>''
         ]);
@@ -176,14 +176,14 @@ class ConfigurationSpecificationSeeder extends Seeder
             'Device_ID'=>4,
             'Configuration_Detail_ID'=>21,
             'Specification'=>'5 cánh',
-            'Brand_ID'=>null,
+            'Brand_ID'=>1,
             'Status'=>1,
             'Note'=>''
         ]); ConfigurationSpecification::create([
             'Device_ID'=>4,
             'Configuration_Detail_ID'=>18,
             'Specification'=>'Có',
-            'Brand_ID'=>null,
+            'Brand_ID'=>2,
             'Status'=>1,
             'Note'=>''
         ]);

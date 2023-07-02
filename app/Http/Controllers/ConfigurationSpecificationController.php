@@ -12,9 +12,12 @@ class ConfigurationSpecificationController extends Controller
         return response()->json($configurationSpecifications);
     }
 
-    public function show($id_device, $id_configuration_detail)
+    public function show($id)
     {
-        $configurationSpecification = ConfigurationSpecification::find([$id_device, $id_configuration_detail]);
+        $configurationSpecification = ConfigurationSpecification::find($id);
+        if(!$configurationSpecification){
+            return response()->json(['message'=>'Configuration not found',404]);
+        }
         return response()->json($configurationSpecification);
     }
 
@@ -24,11 +27,28 @@ class ConfigurationSpecificationController extends Controller
         return response()->json($configurationSpecification, 201);
     }
 
-    public function update(Request $request, $id_device, $id_configuration_detail)
+    public function update(Request $request, $id)
     {
-        $configurationSpecification = ConfigurationSpecification::find([$id_device, $id_configuration_detail]);
-        $configurationSpecification->update($request->all());
-        return response()->json($configurationSpecification);
+        try {
+            $configurationSpecification = ConfigurationSpecification::find($id);
+
+            if (!$configurationSpecification) {
+                return response()->json([
+                    'error' => 'Không tìm thấy bản ghi',
+                    'status' => 404
+                ]);
+            }
+            $configurationSpecification->update($request->all());
+            // $configurationSpecification->save();
+            return response()->json([
+                'Data' => $configurationSpecification
+            ]);
+        } catch (\Exception $exception) {
+            return response()->json([
+                'error' => 'Lỗi',
+                'status' => 500
+            ]);
+        }
     }
 
     public function destroy($id_device, $id_configuration_detail)

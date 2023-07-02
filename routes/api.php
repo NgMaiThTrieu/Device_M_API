@@ -72,7 +72,7 @@ Route::delete('type-of-devices/{id}', [TypeOfDeviceController::class, 'destroy']
 Route::apiResource('rooms', RoomController::class);
 
 //Lô hàng
-Route::apiResource('batches', BatchOfGoodController::class);
+Route::apiResource('batch-of-goods', BatchOfGoodController::class);
 
 //Chi tiết lô hàng
 Route::apiResource('bod-details', BodDetailController::class);

@@ -9,6 +9,7 @@ class ConfigurationSpecification extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'Device_ID',
         'Configuration_Detail_ID',
         'Specification',
@@ -17,8 +18,7 @@ class ConfigurationSpecification extends Model
         'Note'
     ];
 
-    protected $primaryKey = ['Device_ID','Configuration_Detail_ID'];
-    protected $table = 'configuration_specifications';
+
     public $timestamps = false;
     public $incrementing = false;
 

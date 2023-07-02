@@ -29,7 +29,7 @@ class TypeOfDeviceSeeder extends Seeder
         TypeOfDevice::create([
             'Type_Of_Device_Name'=>'Quạt',
             'Image'=>'https://tse1.mm.bing.net/th?id=OIP.IFoBosxBLVERJRoNxkiJsQHaHa&pid=Api&P=0&h=180',
-            'Icon'=>'https://img.icons8.com/?size=512&id=4rOBIFkGqKzD&format=png',
+            'Icon'=>'https://img.icons8.com/?size=512&id=104278&format=png',
             'Status'=>1
         ]);
         //
