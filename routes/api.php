@@ -102,6 +102,8 @@ Route::apiResource('report-mails', ReportEmailController::class);
 
 //Bảng thông tin giáo viên
 Route::apiResource('teacher-informations', TeacherInformationController::class);
+//Route::put('teacher-informations/{id_teacher}', 'TeacherInformationController@update');
+//Route::patch('/teachers/{id_teacher}', 'TeacherInformationController@update');
 
 //bảng yêu cầu
 Route::apiResource('requires', RequireController::class);

@@ -17,7 +17,7 @@ class TeacherInformationSeeder extends Seeder
             'Faculty_ID'=>1,
             'Image'=>'https://img2.thuthuatphanmem.vn/uploads/2019/05/06/anh-the-dep-nen-xanh_100828270.jpg',
             'Username'=>'vthdat@gmail.com',
-            'Password'=>'123123',
+            'Password'=>'4297f44b13955235245b2497399d7a93',
             
             'Teacher_Name'=>'Võ Thành Đạt',
             'Phone_Number'=>'0933725743',
@@ -31,7 +31,7 @@ class TeacherInformationSeeder extends Seeder
             'Faculty_ID'=>1,
             'Username'=>'ptmhuyen@gmail.com',
             'Image'=>'https://demoda.vn/wp-content/uploads/2022/03/mau-anh-the.jpg',
-            'Password'=>'123123',
+            'Password'=>'4297f44b13955235245b2497399d7a93',
             'Teacher_Name'=>'Phạm Mỹ Huyền',
             'Phone_Number'=>'0933725746',
             'Address'=>'60 Huỳnh Thúc Kháng, Phường Bến Nghé, Quận 1, Tp.HCM',

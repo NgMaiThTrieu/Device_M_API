@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('Faculty_ID');
             $table->string('Image', 255);
             $table->string('Username', 20);
-            $table->string('Password', 12);
+            $table->string('Password', 255);
             $table->string('Teacher_Name', 20);
             $table->string('Phone_Number',20);
             $table->string('Address', 70);

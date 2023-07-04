@@ -12,6 +12,7 @@ class Faculty extends Model
     protected $fillable = [
      'Faculty_Name',
      'Image',
+     'LinkInfo',
      'Status'
     ];
     protected $table = 'faculties';

@@ -15,6 +15,7 @@ return new class extends Migration
         $table->id('Faculty_ID');
         $table->string('Faculty_Name', 255);
         $table->string('Image');
+        $table->string('LinkInfo',255);
         $table->integer('Status');
         //$table->timestamps();
         });
