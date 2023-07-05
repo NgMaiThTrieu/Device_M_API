@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('borrowing_details', function (Blueprint $table) {
-            $table->id('Borrowing_ID');
+            $table->id('id');
+            $table->integer('Borrowing_ID');
             $table->integer('Device_ID');
             $table->integer('Room_ID');
+            $table->integer('Old_Room_ID');
             $table->smallInteger('Status');
-            $table->timestamps();
+            $table->smallInteger('Old_Status');
         });
     }
 

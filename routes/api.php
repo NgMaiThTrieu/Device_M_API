@@ -10,7 +10,7 @@ use App\Http\Controllers\TypeOfDeviceController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\BatchOfGoodController;
 use App\Http\Controllers\BodDetailController;
-use App\Http\Controllers\EquipmentBorrowingFormController;
+use App\Http\Controllers\DeviceBorrowingFormController;
 use App\Http\Controllers\BorrowingDetailController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\ConfigurationDetailController;
@@ -80,7 +80,7 @@ Route::apiResource('batch-of-goods', BatchOfGoodController::class);
 Route::apiResource('bod-details', BodDetailController::class);
 
 //phiếu mượn trả
-Route::apiResource('equipment-borrowing-forms', EquipmentBorrowingFormController::class);
+Route::apiResource('device-borrowing-forms', DeviceBorrowingFormController::class);
 
 //Chi tiết phiếu mượn
 Route::apiResource('borrowing-details', BorrowingDetailController::class);

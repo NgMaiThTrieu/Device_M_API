@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('Device_Name', 50);
             $table->string('Image',255);
             $table->string('QRCode', 20);
+            $table->integer('Location');
             $table->decimal('Price', 19, 4);
             $table->dateTime('Warranty_Period');
             $table->smallInteger('Status');

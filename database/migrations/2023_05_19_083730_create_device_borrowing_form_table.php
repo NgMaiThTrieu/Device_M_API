@@ -11,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('equipment_borrowing_forms', function (Blueprint $table) {
-            $table->id('Equipment_Borrowing_Form_ID');
-            $table->integer('Device_ID');
+        Schema::create('device_borrowing_forms', function (Blueprint $table) {
+            $table->id('id');
             $table->integer('Borrower_ID');
             $table->integer('Lender_ID');
-            $table->dateTime('Borrow_Date');
+            $table->dateTime('Borrowing_Date');
             $table->dateTime('Due_Date');
             $table->smallInteger('Status');
-            $table->timestamps();
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('equipment_borrowing_forms');
+        Schema::dropIfExists('device_borrowing_forms');
     }
 };

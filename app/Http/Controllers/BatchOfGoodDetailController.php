@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BatchOfGoodDetail;
 use Illuminate\Http\Request;
-use App\Models\EquipmentBorrowingForm;
 
-class EquipmentBorrowingFormController extends Controller
+class BatchOfGoodDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $forms = EquipmentBorrowingForm::all();
-        return response()->json($forms);
+        $bodDetails = BatchOfGoodDetail::all();
+        return response()->json($bodDetails);
     }
 
     /**
@@ -29,17 +29,17 @@ class EquipmentBorrowingFormController extends Controller
      */
     public function store(Request $request)
     {
-        $form = EquipmentBorrowingForm::create($request->all());
-        return response()->json($form, 201);
+        $bodDetail = BatchOfGoodDetail::create($request->all());
+        return response()->json($bodDetail, 201);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($form_id)
+    public function show($id)
     {
-        $form = EquipmentBorrowingForm::find($form_id);
-        return response()->json($form);
+        $bodDetail = BatchOfGoodDetail::where('id', $id)->first();
+        return response()->json($bodDetail);
     }
 
     /**
@@ -53,20 +53,19 @@ class EquipmentBorrowingFormController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $form_id)
+    public function update(Request $request, $id)
     {
-        $form = EquipmentBorrowingForm::find($form_id);
-        $form->update($request->all());
-        return response()->json($form);
+        $bodDetail = BatchOfGoodDetail::where('id', $id)->first();
+        $bodDetail->update($request->all());
+        return response()->json($bodDetail);
     }
-
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($form_id)
+    public function destroy($id)
     {
-        $form = EquipmentBorrowingForm::find($form_id);
-        $form->delete();
+        $bodDetail = BatchOfGoodDetail::where('id', $id)->first();
+        $bodDetail->delete();
         return response()->json(null, 204);
     }
 }

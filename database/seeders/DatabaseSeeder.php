@@ -15,6 +15,8 @@ use App\Models\TeacherInformation;
 use App\Models\Configuration;
 use App\Models\ConfigurationDetail;
 use App\Models\ConfigurationSpecification;
+use App\Models\DeviceBorrowingForm;
+use App\Models\BorrowingDetail;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -34,5 +36,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ConfigurationSeeder::class);
         $this->call(ConfigurationSpecificationSeeder::class);
         $this->call(ReportMail::class);
+        $this->call(DeviceBorrowingFormSeeder::class);
+        $this->call(BorrowingDetailSeeder::class);
     }
 }

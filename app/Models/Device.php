@@ -19,6 +19,7 @@ class Device extends Model
         'Device_Name',
         'Image',
         'QRCode',
+        'Location',
         'Price',
         'Warranty_Period',
         'Status',

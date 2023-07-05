@@ -5,17 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BodDetail extends Model
+class BatchOfGoodDetail extends Model
 {
     use HasFactory;
     protected $fillable = [
         'Batch_Of_Goods_ID',
-        'Device_ID',
         'Quantity',
-        'Unit_Price'
+        'Unit_Price',
+        'Status'
     ];
-    protected $table = 'departments';
-    protected $primaryKey = ['Batch_Of_Goods_ID','Device_ID'];
-
-        public $timestamps = true;
+    protected $table = 'Batch_Of_Good_Details';
+        public $timestamps = false;
 }
