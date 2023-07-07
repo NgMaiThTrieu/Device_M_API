@@ -15,7 +15,7 @@ return new class extends Migration
             $table->integer('Batch_Of_Goods_ID');
             $table->integer('Quantity');
             $table->decimal('Unit_Price', 10, 2);
-            $table->smallInteger('Status');
+            $table->integer('Status');
         });
     }
 

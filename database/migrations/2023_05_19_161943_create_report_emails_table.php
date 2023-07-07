@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('Device_Image');
             $table->string('QR_Code', 20);
             $table->string('Description', 255);
-            $table->smallInteger('Status');
+            $table->integer('Status');
             $table->timestamps();
         });
     }

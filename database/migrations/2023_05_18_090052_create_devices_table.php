@@ -25,7 +25,7 @@ return new class extends Migration
             $table->integer('Location');
             $table->decimal('Price', 19, 4);
             $table->dateTime('Warranty_Period');
-            $table->smallInteger('Status');
+            $table->integer('Status');
             $table->text('Note')->nullable();
             $table->text('Description')->nullable();
             $table->timestamps();

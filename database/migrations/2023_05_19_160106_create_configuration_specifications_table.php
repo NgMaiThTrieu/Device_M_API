@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('Configuration_Detail_ID');
             $table->string('Specification', 30)->nullable();
             $table->integer('Brand_ID')->nullable();
-            $table->smallInteger('Status');
+            $table->integer('Status');
             $table->string('Note')->nullable();
         });
     }

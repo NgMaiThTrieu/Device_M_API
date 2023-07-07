@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('Device_ID');
             $table->smallInteger('Require_Type');
             $table->text('Description');
-            $table->smallInteger('Status');
+            $table->integer('Status');
             $table->timestamps();
         });
     }

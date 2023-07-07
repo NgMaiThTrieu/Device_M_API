@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('Type_Of_Device_Name', 20);
             $table->string('Image', 255);
             $table->string('Icon',255);
-            $table->smallInteger('Status');
+            $table->integer('Status');
         });
     }
 

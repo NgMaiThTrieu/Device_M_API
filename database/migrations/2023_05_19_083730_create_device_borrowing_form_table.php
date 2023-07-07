@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('Lender_ID');
             $table->dateTime('Borrowing_Date');
             $table->dateTime('Due_Date');
-            $table->smallInteger('Status');
+            $table->integer('Status');
         });
     }
 

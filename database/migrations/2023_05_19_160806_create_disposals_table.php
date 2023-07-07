@@ -17,7 +17,7 @@ return new class extends Migration
             $table->decimal('Disposal_Cost', 19, 4);
             $table->datetime('Disposal_Date');
             $table->text('Note');
-            $table->smallInteger('Status');
+            $table->integer('Status');
             $table->timestamps();
         });
     }

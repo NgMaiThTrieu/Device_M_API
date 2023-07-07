@@ -14,12 +14,13 @@ return new class extends Migration
         Schema::create('brand', function (Blueprint $table) {
             $table->id('Brand_ID')->NULL;
             $table->string('Brand_Name');
-            $table->smallInteger('Status');
+            $table->integer('Status');
         });
     }
 
     /**
      * Reverse the migrations.
+     * 
      */
     public function down(): void
     {

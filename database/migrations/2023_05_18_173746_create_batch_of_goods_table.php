@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('batch_of_goods', function (Blueprint $table) {
             $table->id('Batch_Of_Goods_ID');
             $table->dateTime('Date_Of_Import');
-            $table->smallInteger('Status');
+            $table->integer('Status');
         });
     }
 

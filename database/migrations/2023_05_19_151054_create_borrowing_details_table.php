@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('Device_ID');
             $table->integer('Room_ID');
             $table->integer('Old_Room_ID');
-            $table->smallInteger('Status');
-            $table->smallInteger('Old_Status');
+            $table->integer('Status');
+            $table->integer('Old_Status');
         });
     }
 
