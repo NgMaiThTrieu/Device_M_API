@@ -29,7 +29,8 @@ class DeviceSeeder extends Seeder
             'Warranty_Period'=>'2024-5-20',
             'Status'=>1,
             'Note'=>'',
-            'Description'=>'PC HP Slim Desktop Bundle S01-PF2034D i3-12100/8GB/256GB/Win11 6L605PA'
+            'Description'=>'PC HP Slim Desktop Bundle S01-PF2034D i3-12100/8GB/256GB/Win11 6L605PA',
+            'IsBorrowing'=>true
         ]);
         Device::create([
             'Type_Of_Device_ID'=> 1,
@@ -46,7 +47,8 @@ class DeviceSeeder extends Seeder
             'Warranty_Period'=>'2024-5-20',
             'Status'=>1,
             'Note'=>'',
-            'Description'=>' (Core i3-10105/4GB/SSD 256GB/Win11)'
+            'Description'=>' (Core i3-10105/4GB/SSD 256GB/Win11)',
+            'IsBorrowing'=>true
         ]);
         Device::create([
             'Type_Of_Device_ID'=> 1,
@@ -66,7 +68,8 @@ class DeviceSeeder extends Seeder
             'Description'=>' (Máy tính đồng bộ HP ProDesk 600G2 SFF (Small Form Factor) thế hệ mới với hiệu suất cao
             Cấu hình sử dụng main chipset Intel Q150
             Bộ vi xử lý hỗ trợ bộ vi xử lý thế hệ thứ 6 Skylake (Core i3, i5, i7, Pentium)
-            DDR4 (4 khe DDR4 hỗ trợ tối đa 64GB bus 2133))'
+            DDR4 (4 khe DDR4 hỗ trợ tối đa 64GB bus 2133))',
+            'IsBorrowing'=>false
         ]);
         Device::create([
             'Type_Of_Device_ID'=> 3,
@@ -75,7 +78,7 @@ class DeviceSeeder extends Seeder
             'Room_ID'=> 2,
             'Faculty_ID'=> 1,
             'Brand_ID'=> 19,
-            'Device_Name'=> 'Quạt sạc điện Sunhouse SHD7223',
+            'Device_Name'=> 'x sạc điện Sunhouse SHD7223',
             'Image'=>'https://cdn.nguyenkimmall.com/images/thumbnails/696/522/detailed/765/10050606-quat-sac-dien-sunhouse-shd7223-1.jpg',
             'QRCode'=>'1121122023525',
             'Location'=>0,
@@ -87,7 +90,8 @@ class DeviceSeeder extends Seeder
             - 3 tốc độ gió, đáp ứng mọi nhu cầu
             - Quay đảo chiều, gió tản đều
             - Dung lượng pin lớn, hoạt động liên tục trong 5 - 16 giờ tùy tốc độ
-            - Tích hợp đèn ngủ 2 trong 1'
+            - Tích hợp đèn ngủ 2 trong 1',
+            'IsBorrowing'=>false
         ]);
     }
 }

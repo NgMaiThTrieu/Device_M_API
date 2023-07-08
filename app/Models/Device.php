@@ -24,7 +24,8 @@ class Device extends Model
         'Warranty_Period',
         'Status',
         'Note',
-        'Description'
+        'Description',
+        'IsBorrowing'
     ];
 
     protected $primaryKey = 'Device_ID';

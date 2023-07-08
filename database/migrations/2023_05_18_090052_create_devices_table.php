@@ -28,6 +28,7 @@ return new class extends Migration
             $table->integer('Status');
             $table->text('Note')->nullable();
             $table->text('Description')->nullable();
+            $table->boolean('IsBorrowing');
             $table->timestamps();
         });
     }
