@@ -63,7 +63,7 @@ class DeviceSeeder extends Seeder
             'Location'=>3,
             'Price'=> 9300000 ,
             'Warranty_Period'=>'2024-5-20',
-            'Status'=>0,
+            'Status'=>1,
             'Note'=>'',
             'Description'=>' (Máy tính đồng bộ HP ProDesk 600G2 SFF (Small Form Factor) thế hệ mới với hiệu suất cao
             Cấu hình sử dụng main chipset Intel Q150

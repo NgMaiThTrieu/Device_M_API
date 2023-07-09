@@ -113,3 +113,4 @@ Route::apiResource('detail-cons', DetailConController::class);
 
 //Bảng thương hiệu
 Route::apiResource('brands', BrandController::class);
+

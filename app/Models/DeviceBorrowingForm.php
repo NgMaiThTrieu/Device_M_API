@@ -12,7 +12,7 @@ class DeviceBorrowingForm extends Model
         'id',
         'Borrower_ID',
         'Lender_ID',
-        'Borrow_Date',
+        'Borrowing_Date',
         'Due_Date',
         'Status'
     ];
