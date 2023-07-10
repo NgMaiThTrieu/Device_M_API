@@ -16,7 +16,7 @@ class ReportMail extends Seeder
         ReportEmail::create(
             ['Student_Code'=>'0306201471',
             'Device_Image'=>'https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/821/10052816-pc-hp-slim-desktop-bundle-s01-i5-12400-pf2033d-6l604pa-1.jpg',
-            'QR_Code'=>'re23',
+            'QR_Code'=>'1',
             'Description'=>'Thiết bị hỏng CPU',
             'Status'=>1
         ]);
